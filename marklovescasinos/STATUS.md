@@ -27,7 +27,7 @@ Captions for all: CAPTIONS.md. Ask owner for 24h/72h stats → clips_log.csv.
 - vegas_928: 0:31 "we just did a bonus, big boss" (bonus32), 1:42 triple-diamond near hand-pay (diamond), 0:20 cash-out excitement.
 - Fremont (IRL/YT): 20:00 claw machine "these are rigged", 23:48 fan Zach came for his birthday and found Mark.
 - Crazy Joker (IRL): 1:13 Abigail "you're intimidating me", 1:27 impersonations, 0:09 "you're Batman" bar banter. AVOID 16:00–19:00 (veteran talks about rape — banned content) and the "pencil trick"/"kitchen drawer" lines (violent).
-- Nashville Just Landed (transcripts/nash_tr.txt): not reviewed yet. Vegas $5k at casino: not downloaded yet.
+- Nashville Just Landed (transcripts/nash_tr.txt): not reviewed yet. Vegas $5k at casino (transcripts/vegas5k_tr.txt): transcribed, not reviewed yet.
 
 ## Open questions
 - Clipping Culture: OK to use Kick VODs of the same streams? (owner asked)
