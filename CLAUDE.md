@@ -11,4 +11,5 @@ Owner is in Sweden, phone with Swedish UI: short replies, exact copy-paste capti
 - YouTube (@WhyNotTop-3): IRL only, zero gambling on screen/in talk. Instagram (one_scroll_man): Vegas physical-casino moments OK.
 - Every clip: Kick overlay (brand/kick_overlay.png, placed y=1380–1481), captions from 0.0 s, no AI voice, true hooks, caption = line + @marklovescasinos / #Ad own line / ≤3 tags.
 - Tools: marklovescasinos/tools (irlgen.py, scanvod.py, getrange.py, tr.py, cover.py); specs spec_*.py.
+- START HERE: marklovescasinos/STATUS.md (what is made/posted, sources, unused moments, open questions), CAPTIONS.md, transcripts/.
 ## Other: gattouz0/ (English-only Gattouz0 clips, $0.20/1k), jasontheween/ (#JasonTheWeen, ends Nov 30).
