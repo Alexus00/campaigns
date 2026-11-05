@@ -16,7 +16,10 @@
 | mlc_37_points (Fremont arcade basketball) | YT | spec_bball.py | not yet |
 | mlc_joker_origin (Joker costume, wholesome origin) | YT | spec_joker.py | not yet |
 | mlc_handpay_reveal ($30 spin → $2,555.50 hand pay, reaction first / win last) | IG | spec_handpay.py | posted Nov 5 (97 views/1 h, skip 52.6%) |
-| mlc_big_boss_875 ($12.50 spin → bonus → $875, RESULT FIRST, 18 s) | IG | spec_bigboss.py | not yet (made Nov 5) |
+| mlc_big_boss_875 ($12.50 spin → bonus → $875, RESULT FIRST, 18 s) | IG | spec_bigboss.py | not yet — post THIS or last_free_spin |
+| mlc_last_free_spin (TEST C: suspense with context, same bonus, 14 s) | IG | spec_lastfree.py | not yet — post THIS or big_boss |
+| mlc_last_slot_of_the_night (TEST A: stakes first, $1,700 in → $2,446 voucher, 24 s) | IG | spec_lastslot.py | not yet |
+| mlc_vegas_in_12_seconds (TEST B: brainrot montage, 12 s) | IG | spec_brainrot.py | not yet |
 Captions for all: CAPTIONS.md. Ask owner for 24h/72h stats → clips_log.csv.
 
 ## Sources (only streams that are in the official folders)
@@ -28,7 +31,8 @@ Captions for all: CAPTIONS.md. Ask owner for 24h/72h stats → clips_log.csv.
 ## Unused moments worth checking next
 - vegas_928 0:31–0:35 big boss = USED (mlc_big_boss_875).
 - vegas_928: 1:03 Frankenstein "it's alive / wager saver" ($24 spin → MINOR $450, WIN $468), 3:11 last spin of night, first-ever old-school pinball ("put in 1700, taking out 2400"), 1:42 triple-diamond near hand-pay (diamond).
-- vegas_928 0:14–0:21 hand pay = USED (mlc_handpay_reveal).
+- vegas_928 0:14–0:21 hand pay = USED (mlc_handpay_reveal). 3:09–3:13 last slot = USED (test A). Brainrot used 0:04 bonus, 1:03 wager saver, 1:12 coin flip, 1:22 golden spin, 2:09 diamond.
+- AVOID: 0:54 $1,000 bonus buy — it LOST ("that was terrible") → negative for Mark (rule 10).
 - Fremont (IRL/YT): 20:00 claw machine "these are rigged", 23:48 fan Zach came for his birthday and found Mark.
 - Crazy Joker (IRL): 1:13 Abigail "you're intimidating me", 1:27 impersonations, 0:09 "you're Batman" bar banter. AVOID 16:00–19:00 (veteran talks about rape — banned content) and the "pencil trick"/"kitchen drawer" lines (violent).
 - Nashville Just Landed (transcripts/nash_tr.txt): not reviewed yet. Vegas $5k at casino (transcripts/vegas5k_tr.txt): transcribed, not reviewed yet.

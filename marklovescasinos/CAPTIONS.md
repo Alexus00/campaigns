@@ -9,3 +9,6 @@
 - YT joker: title "He dressed up as the Joker and told his origin story… 😂 #shorts"; desc: Mark went full Joker for Halloween in Nashville 🃏 @marklovescasinos / #Ad / #joker #halloween #irl — pin: best costume of Halloween? 👇
 - handpay reveal (IG): he thought it was a thousand… then he saw the screen 😳 @marklovescasinos / #Ad / #slots #vegas #marklovescasinos — pin: guess how much he won 👇
 - big boss (IG): $12.50 a spin… then the bonus hit 😳 @marklovescasinos / #Ad / #slots #vegas #marklovescasinos — pin: would you keep spinning after $875? 👇
+- TEST A last slot (IG): last slot of the night… win = up, lose = -$2,500 😳 @marklovescasinos / #Ad / #slots #vegas #marklovescasinos — pin: would you have put it all in? 👇
+- TEST B brainrot (IG): 3 hours of Vegas in 12 seconds 😭 @marklovescasinos / #Ad / #vegas #slots #marklovescasinos — pin: which W was the best? 👇
+- TEST C last free spin (IG): his last free spin… he needed diamonds 💎 @marklovescasinos / #Ad / #slots #vegas #marklovescasinos — pin: guess how much it paid 👇
