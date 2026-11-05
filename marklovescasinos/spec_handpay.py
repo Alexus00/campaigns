@@ -16,7 +16,8 @@ P = [   # every shot with Mark's face uses its OWN audio (lip sync); only screen
     dict(src=S, a=69.70, b=71.20, x=960),                                                    # "hats hats hats"
     dict(src=S, a=86.00, b=87.40, x=960, zoom_at=86.1, zoom_len=0.9),                       # "free trigger, baby"
     dict(src=S, a=97.80, b=100.05, x=960),                                                   # "forgetting this is a $30 spin"
-    dict(src=S, a=142.25, b=145.20, x=960, y=480, h=960),                                    # "if we get the grand, what do we do"
+    dict(src=S, a=142.25, b=143.55, x=960, dim=True),                                        # "if we get the grand" (screen shows MINOR $2,500 meter -> blurred)
+    dict(src=S, a=143.55, b=145.20, x=960, y=480, h=960),                                    # face: "what do we do if we get the grand?"
     dict(src=S, a=168.35, b=169.30, x=760, y=370, h=740),                                    # board fills (totals cropped out)
     dict(src=S, a=175.10, b=178.30, x=960, dim=True),                                        # "a thousand f*cking dollars" (screen blurred)
     # REVEAL
@@ -37,11 +38,11 @@ YEL, GRN, WHT, RED = "&H0000E5FF&", "&H0050E650&", "&H00FFFFFF&", "&H003030FF&"
 def lab(st, en, x, y, txt, col=WHT, fs=56, pop=True, layer=7):
     anim = "\\fscx140\\fscy140\\t(0,180,\\fscx100\\fscy100)" if pop else ""
     return (st, en, "Hook", f"{{\\pos({x},{y})\\c{col}\\fs{fs}{anim}}}{txt}", layer)
-R1 = T[10] + 0.45
+R1 = T[11] + 0.45
 SPEC["extra"] = [
     lab(0.0, R1, 820, 370, "WIN: ???", YEL, 52, pop=False),                 # small hidden badge (whole build-up)
     lab(T[2] + 0.4, R1, 250, 370, "BET: $30", WHT, 52),                       # bet badge from his own line
-    lab(T[9], T[10], 540, 760, "WIN: ???", YEL, 120),                          # big teaser over blurred screen
+    lab(T[10], T[11], 540, 760, "WIN: ???", YEL, 120),                          # big teaser over blurred screen
     lab(R1, END, 540, 400, "WIN: $2,555.50", GRN, 96),                        # reveal = number on the machine
 ]
 if __name__ == "__main__":
