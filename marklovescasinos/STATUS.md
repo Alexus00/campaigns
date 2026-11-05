@@ -12,7 +12,7 @@
 | mlc_top_dollar (take it or try again, offer tracker) | IG | spec_td.py | not yet (post next) |
 | mlc_craps_hit_and_run ($1,100 bubble craps) | IG | spec_craps.py | not yet |
 | mlc_black_or_red (gamble feature, chat vote) | IG | spec_gb.py | not yet |
-| mlc_fan_inspired (fan Luca: "this guy inspired me") | YT | spec_luca.py | not yet |
+| mlc_fan_inspired (fan Luca: "this guy inspired me") | YT | spec_luca.py | posted (Nov 5) |
 | mlc_37_points (Fremont arcade basketball) | YT | spec_bball.py | not yet |
 | mlc_joker_origin (Joker costume, wholesome origin) | YT | spec_joker.py | not yet |
 | mlc_handpay_reveal ($30 spin → $2,555.50 hand pay, reaction first / win last) | IG | spec_handpay.py | posted Nov 5 (97 views/1 h, skip 52.6%) |
@@ -23,6 +23,7 @@
 Captions for all: CAPTIONS.md. Ask owner for 24h/72h stats → clips_log.csv.
 
 ## Sources (only streams that are in the official folders)
+- NEW Nov 5: IRL folder on Dropbox (works!): https://www.dropbox.com/scl/fo/3dn4dw6q8s47oe0hbhk4f/AKAR1QNBnYSz6g7vCQsawww?rlkey=9isli21qxgtpv19j4upidy81w — list files via POST www.dropbox.com/list_shared_link_folder_entries (link_key, secure_hash, rlkey, t-cookie); each entry href with dl=1 downloads. Contains Vegas $5k parts 1-5, Fremont, Nashville Just Landed p1-7, Crazy Joker, IRL Vegas 9-28.
 - Drive IRL folder 12FFsKvbUW4dSvl_UWduhiEcUUrcOcVfi / Gambling 1VWFQ95eDWOZ3FW_Cledxb0PkPDXH4GWD → usually "Quota exceeded".
 - Owner's Drive copy (works): folder 162XLZ-208-o1PDuV70VENAqGubC1pPdn → IRL VEGAS 9:28 (id 1gUKoGvGoocpVmmDiqto_gFj2OLPQT1j9, 5.7 GB, 3h14) + Nashville Part 7. Download: tools/gdl.sh <id> <name>.
 - Kick VODs of the same IRL streams (owner asked Clipping Culture to confirm): irl_vods.txt, kick_vods.txt (Fremont 133254715, Crazy Joker 135166268, Nashville 135003697, Vegas $5k 133107875). HD range: tools/getrange.py <m3u8> <name> <a> <b>.

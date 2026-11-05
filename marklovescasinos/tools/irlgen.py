@@ -95,7 +95,7 @@ def build(spec):
     else:
         add(0, total, "Small", f"{{\\pos({W // 2},{HEAD - 34})}}{spec.get('credit', '')}")
 
-    hi = {h.lower() for h in spec.get("highlight", [])}
+    hi = {re.sub(r"[^\w'\-]", "", h.lower()) for h in spec.get("highlight", [])}   # punctuation-insensitive
     fix = {k.lower(): v for k, v in spec.get("fix", {}).items()}
     drop = {d.lower() for d in spec.get("drop", [])} | DROP_ALWAYS
     caps = []
