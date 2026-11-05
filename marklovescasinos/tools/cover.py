@@ -16,7 +16,7 @@ def cover(src, t, x0, l1, l2, bottom, out, y0=60, ch=900, cw=1080):
         x = (W - d.textlength(s, font=fn)) / 2
         d.text((x + 6, y + 8), s, font=fn, fill=(0, 0, 0), stroke_width=st, stroke_fill=(0, 0, 0))
         d.text((x, y), s, font=fn, fill=fill, stroke_width=st, stroke_fill=(0, 0, 0))
-    text(310, l1, 104, (255, 255, 255)); text(425, l2, 96, YEL)
+    text(296, l1, 104, (255, 255, 255)); text(406, l2, 96, YEL)   # leaves room for $ , descenders above the rule
     text(fy + ch + 35, bottom, 84, (60, 230, 80))
     ov = Image.open("brand/kick_overlay.png"); bg.paste(ov, (0, H - 1080), ov)
     bg.save(out, quality=93); bg.resize((270, 480)).save("work/_cov_s.jpg")
