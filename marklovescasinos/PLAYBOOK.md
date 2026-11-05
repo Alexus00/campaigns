@@ -19,6 +19,8 @@
 | Wholesome stranger | mlc_fan_inspired | quote hook |
 
 ## Lessons (update with real stats)
+- Nov 5 stats (IG one_scroll_man): jordan_double (result-first: $1,000 + double down, table graphic) 2,418 views/6 h, skip 34%, avg 14 s of 41 s.
+  handpay_reveal (reaction-first, amount hidden) 97 views/1 h, skip 52.6%, avg 10 s of 28 s. → Stake/decision + money context in frame 1 beats a mystery reaction. Viewers leave ~10–14 s → aim ≤ 22 s.
 - Exact $ / number in first words; one risky decision; payoff on screen (research Nov 5).
 - LIP SYNC: a shot where Mark's face/mouth is visible must use its OWN audio (no `va`/`vsrc` J-cut). Borrowed footage only on no-face shots (screens, banners, chips). irlgen now renders parts frame-exact with PCM audio (fixed ~15 ms/part AAC drift on concat, Nov 5).
 - Never > 3 s of dead visuals (floor/back of head) → dim + graphic or cutaway.
