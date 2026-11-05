@@ -48,14 +48,15 @@ def render_part(p, out):
           f"[b]crop={cw}:{ch}:{x}:{y},scale={W}:{PANEL}:flags=lanczos,eq=contrast=1.05:saturation=1.08{fl}[m];"
           f"[c]crop={zw}:{zh}:{zx}:{zy},scale={W}:{PANEL}:flags=lanczos,eq=contrast=1.08:saturation=1.12[z];"
           f"[bg][m]overlay=0:{HEAD}[t];[t][z]overlay=0:{HEAD}:enable='{en}',format=yuv420p,setsar=1,trim=end_frame={round(dfr * FPS)}[v]")
-    run(["ffmpeg", "-v", "error", "-y", "-ss", f"{va}", "-t", f"{dur}", "-i", os.path.join(D, "src", f"{p.get('vsrc', p['src'])}.mp4"),
-         "-ss", f"{p['a']}", "-t", f"{dur}", "-i", os.path.join(D, "src", f"{p['src']}.mp4"),
+    run(["ffmpeg", "-v", "error", "-y", "-ss", f"{va}", "-t", f"{dur + 0.4}", "-i", os.path.join(D, "src", f"{p.get('vsrc', p['src'])}.mp4"),
+         "-ss", f"{p['a']}", "-t", f"{dur + 0.4}", "-i", os.path.join(D, "src", f"{p['src']}.mp4"),
          *(["-i", p["narr"]] if p.get("narr") else []),
          "-filter_complex", vf + (f";[1:a]aresample=48000,volume={p.get('duck', 0.15)}[o];[2:a]aresample=48000,apad,volume=1.6[n];"
-                                  f"[o][n]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=9,apad,atrim=0:{dfr}[au]"
-                                  if p.get("narr") else f";[1:a]aresample=48000,atempo={1 / sl},loudnorm=I=-14:TP=-1.5:LRA=9,apad,atrim=0:{dfr}[au]"),
-         "-map", "[v]", "-map", "[au]", "-frames:v", str(round(dfr * FPS)), "-c:v", "libx264", "-preset", "medium", "-crf", "17",
-         "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", out])   # PCM parts: no AAC priming delay piling up on concat
+                                  f"[o][n]amix=inputs=2:duration=first:normalize=0,apad,atrim=0:{dfr},loudnorm=I=-14:TP=-1.5:LRA=9,aresample=48000[au]"
+                                  if p.get("narr") else f";[1:a]aresample=48000,atempo={1 / sl},apad,atrim=0:{dfr},loudnorm=I=-14:TP=-1.5:LRA=9,aresample=48000[au]"),
+         # video and audio are written as SEPARATE files (exact lengths; muxing them together clipped audio tails -> lip-sync drift)
+         "-map", "[v]", "-frames:v", str(round(dfr * FPS)), "-an", "-c:v", "libx264", "-preset", "medium", "-crf", "17", out,
+         "-map", "[au]", "-vn", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", out[:-4] + ".wav"])
 
 
 def ts(x):
@@ -71,8 +72,10 @@ def build(spec):
         timeline.append((t, p)); t += round((p["b"] - p["a"]) * p.get("slow", 1) * FPS) / FPS   # frame-exact, matches rendered parts
     total = t
     open(os.path.join(wd, "list.txt"), "w").writelines(f"file '{os.path.basename(f)}'\n" for f in files)
+    open(os.path.join(wd, "alist.txt"), "w").writelines(f"file '{os.path.basename(f)[:-4]}.wav'\n" for f in files)
     joined = os.path.join(wd, "joined.mp4")
     run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", os.path.join(wd, "list.txt"),
+         "-f", "concat", "-safe", "0", "-i", os.path.join(wd, "alist.txt"), "-map", "0:v", "-map", "1:a",
          "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-c:a", "aac", "-b:a", "192k", joined])
 
     ev = []
