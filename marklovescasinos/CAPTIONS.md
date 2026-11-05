@@ -8,3 +8,4 @@
 - YT 37 points: title "His goal was 37 points… did he do it? 🏀 #shorts"; desc: Mark tried the arcade basketball on Fremont Street 😭 @marklovescasinos / #Ad / #vegas #irl #kick — pin: could you beat 35? 👇
 - YT joker: title "He dressed up as the Joker and told his origin story… 😂 #shorts"; desc: Mark went full Joker for Halloween in Nashville 🃏 @marklovescasinos / #Ad / #joker #halloween #irl — pin: best costume of Halloween? 👇
 - handpay reveal (IG): he thought it was a thousand… then he saw the screen 😳 @marklovescasinos / #Ad / #slots #vegas #marklovescasinos — pin: guess how much he won 👇
+- big boss (IG): $12.50 a spin… then the bonus hit 😳 @marklovescasinos / #Ad / #slots #vegas #marklovescasinos — pin: would you keep spinning after $875? 👇
