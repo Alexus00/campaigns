@@ -7,3 +7,4 @@
 - YT fan: title "He spotted Mark's stream in Vegas… then said this 🥹 #shorts"; desc: A fan spotted the stream in the middle of Vegas and this happened 🙏 @marklovescasinos / #Ad / #vegas #irl #kick — pin: who's the creator that inspired YOU? 👇
 - YT 37 points: title "His goal was 37 points… did he do it? 🏀 #shorts"; desc: Mark tried the arcade basketball on Fremont Street 😭 @marklovescasinos / #Ad / #vegas #irl #kick — pin: could you beat 35? 👇
 - YT joker: title "He dressed up as the Joker and told his origin story… 😂 #shorts"; desc: Mark went full Joker for Halloween in Nashville 🃏 @marklovescasinos / #Ad / #joker #halloween #irl — pin: best costume of Halloween? 👇
+- handpay reveal (IG): he thought it was a thousand… then he saw the screen 😳 @marklovescasinos / #Ad / #slots #vegas #marklovescasinos — pin: guess how much he won 👇

@@ -1,12 +1,12 @@
-"""cover(src, t, x0, l1, l2, bottom, out, y0=60)  1080x1920, grid-safe (everything inside centre 3:4)"""
+"""cover(src, t, x0, l1, l2, bottom, out, y0=60, ch=900, cw=1080)  cw<1080 = tighter crop, upscaled;  1080x1920, grid-safe (everything inside centre 3:4)"""
 import subprocess
 from PIL import Image, ImageDraw, ImageFilter, ImageEnhance, ImageFont
 W, H = 1080, 1920; F = "fonts/Montserrat.ttf"
-def cover(src, t, x0, l1, l2, bottom, out, y0=60, ch=900):
+def cover(src, t, x0, l1, l2, bottom, out, y0=60, ch=900, cw=1080):
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(t), "-i", f"src/{src}.mp4", "-frames:v", "1", "work/_cov.png"], check=True)
     img = Image.open("work/_cov.png").convert("RGB")
     bg = ImageEnhance.Brightness(img.resize((W, H)).filter(ImageFilter.GaussianBlur(30))).enhance(0.3)
-    f = img.crop((x0, y0, x0 + 1080, y0 + ch)).resize((W, ch), Image.LANCZOS)
+    f = img.crop((x0, y0, x0 + cw, y0 + int(ch * cw / W))).resize((W, ch), Image.LANCZOS)
     f = ImageEnhance.Contrast(ImageEnhance.Color(f).enhance(1.15)).enhance(1.08)
     fy = 530; bg.paste(f, (0, fy)); d = ImageDraw.Draw(bg); YEL = (255, 229, 0)
     d.rectangle((0, fy - 8, W, fy), fill=YEL); d.rectangle((0, fy + ch, W, fy + ch + 8), fill=YEL)
