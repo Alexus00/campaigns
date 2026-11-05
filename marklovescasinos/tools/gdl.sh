@@ -1,6 +1,6 @@
 #!/bin/bash
 # usage: gdl.sh <drive_id> <name>  -> src/<name>.mp4 + wav/<name>.pcm (16k mono)
-C=/home/user/clip-studio/campaigns/marklovescasinos; id=$1; n=$2; ck=$(mktemp)
+C=$(cd "$(dirname "$0")/.." && pwd); id=$1; n=$2; ck=$(mktemp)
 page=$(curl -s -L -m 60 -c $ck "https://drive.google.com/uc?id=$id&export=download")
 uuid=$(echo "$page" | grep -o 'name="uuid" value="[^"]*"' | sed 's/.*value="//;s/"//')
 url="https://drive.usercontent.google.com/download?id=$id&export=download&confirm=t&uuid=$uuid"
