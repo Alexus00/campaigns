@@ -20,6 +20,7 @@
 
 ## Lessons (update with real stats)
 - Exact $ / number in first words; one risky decision; payoff on screen (research Nov 5).
+- LIP SYNC: a shot where Mark's face/mouth is visible must use its OWN audio (no `va`/`vsrc` J-cut). Borrowed footage only on no-face shots (screens, banners, chips). irlgen now renders parts frame-exact with PCM audio (fixed ~15 ms/part AAC drift on concat, Nov 5).
 - Never > 3 s of dead visuals (floor/back of head) → dim + graphic or cutaway.
 - Kick overlay at y=1380–1481 (IG/YT UI covers bottom ~20 %).
 - Stats log: log/clips_log.csv (views_72h, stayed %, avg viewed %). After every 5 clips: compare formats, double down on the winner.
